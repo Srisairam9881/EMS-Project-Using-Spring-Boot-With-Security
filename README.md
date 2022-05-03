@@ -17,13 +17,12 @@
 ### Employee List
 ![Screenshot (75)](https://user-images.githubusercontent.com/80576654/166416495-486ff917-d991-47c8-9d20-957630bd788f.png)
 ![Screenshot (77)](https://user-images.githubusercontent.com/80576654/166416520-eee94f4b-15db-456a-bb47-353b0fa8a8e7.png)
-![Screenshot (78)](https://user-images.githubusercontent.com/80576654/166416540-1761f483-a1dc-4a16-bd98-48475e57c03e.png)
-
+![Screenshot (76)](https://user-images.githubusercontent.com/80576654/166416530-7f6c9b11-918b-444a-88dc-338bcb35299b.png)
 ![Screenshot (79)](https://user-images.githubusercontent.com/80576654/166416564-b9b6f4f2-cac1-4672-a966-8bf3dc16a611.png)
 
 #### Update Employee Form
-![Screenshot (76)](https://user-images.githubusercontent.com/80576654/166416530-7f6c9b11-918b-444a-88dc-338bcb35299b.png)
 
+![Screenshot (78)](https://user-images.githubusercontent.com/80576654/166416540-1761f483-a1dc-4a16-bd98-48475e57c03e.png)
 
 ##
 ### Registration Page
