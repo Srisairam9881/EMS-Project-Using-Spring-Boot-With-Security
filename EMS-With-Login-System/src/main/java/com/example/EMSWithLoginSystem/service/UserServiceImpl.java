@@ -8,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.EMSWithLoginSystem.model.Role;
@@ -15,10 +16,15 @@ import com.example.EMSWithLoginSystem.model.User;
 import com.example.EMSWithLoginSystem.repository.UserRepository;
 import com.example.EMSWithLoginSystem.web.dto.UserRegistrationDto;
 
+
+
 @Service
 public class UserServiceImpl implements UserService {
 
 	private UserRepository userRepository;
+	
+	//@Autowired
+	private BCryptPasswordEncoder passwordEncoder =new BCryptPasswordEncoder();
 	
 	public UserServiceImpl(UserRepository userRepository) {
 		super();
@@ -46,7 +52,7 @@ public class UserServiceImpl implements UserService {
 		User user=new User(
 				           registrationDto.getFirstName(),registrationDto.getLastName(),registrationDto.getGender(),
 				           registrationDto.getDob(),registrationDto.getPhoneNo(),registrationDto.getEmail(),
-				           registrationDto.getPassword(),Arrays.asList(new Role("ROLE_USER")));      
+				           passwordEncoder.encode(registrationDto.getPassword()),Arrays.asList(new Role("ROLE_USER")));      
 				         
 		return userRepository.save(user);
 	}
